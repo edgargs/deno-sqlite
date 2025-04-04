@@ -1,0 +1,18 @@
+
+#Develop
+New-Item -ItemType SymbolicLink -Path "./index.html" -Target "./dist/index.html"
+
+##Front
+deno task lume
+
+##Back
+deno task start
+
+#Production
+
+##Front
+deno task lume
+
+##Back
+deno compile --no-check --output ./dist/index ./src/main.ts
+
