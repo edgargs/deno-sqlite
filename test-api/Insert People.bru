@@ -1,0 +1,18 @@
+meta {
+  name: Insert People
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8369/people
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Edgar",
+    "age": 41
+  }
+}

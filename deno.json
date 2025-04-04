@@ -1,7 +1,7 @@
 {
     "tasks": {
         "start": {
-            "command": "deno run -A src/main.ts",
+            "command": "deno run --unsafely-ignore-certificate-errors -A src/main.ts",
             "desc": "Start the server"
         },
 
