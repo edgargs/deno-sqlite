@@ -9,6 +9,6 @@ const site = lume({
 });
 
 site.use(inline(/* Options */))
-    .use(minifyHTML(/* Options */));;
+    .use(minifyHTML(/* Options */));
 
 export default site;

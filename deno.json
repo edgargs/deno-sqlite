@@ -5,7 +5,7 @@
             "desc": "Start the server"
         },
 
-        "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -"
+        "lume": "echo \"import 'lume/cli.ts'\" | deno run --unsafely-ignore-certificate-errors -A -"
     },
     "imports": {
         "@sqlite": "jsr:@db/sqlite",
