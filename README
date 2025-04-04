@@ -1,6 +1,11 @@
 
 #Develop
-New-Item -ItemType SymbolicLink -Path "./index.html" -Target "./dist/index.html"
+Replace into main.ts
+```
+const ROOT_DIR = "./index.html", ROOT_DIR_PATH = "/";
+==>
+const ROOT_DIR = "./dist/index.html", ROOT_DIR_PATH = "/";
+```
 
 ##Front
 deno task lume

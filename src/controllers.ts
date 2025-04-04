@@ -1,5 +1,5 @@
 import { db } from "./database.ts";
-import { Context } from "jsr:@oak/oak";
+import { Context } from "@oak";
 
 export const peopleController = {
   createPerson: async (ctx: Context) => {

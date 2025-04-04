@@ -1,4 +1,4 @@
-import { Router } from "jsr:@oak/oak";
+import { Router } from "@oak";
 import { peopleController } from "./controllers.ts";
 
 const router = new Router();

@@ -14,8 +14,8 @@
         "lume/": "https://deno.land/x/lume@v2.0.0/"
     },
     "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ]
-  }
+      "types": [
+        "lume/types.ts"
+      ]
+    }
 }

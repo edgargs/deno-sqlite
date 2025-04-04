@@ -1,6 +1,7 @@
-import { Database } from "jsr:@db/sqlite";
+import { Database } from "@sqlite";
 
-const peopleDb = new Database(":memory:");
+//const peopleDb = new Database(":memory:");
+const peopleDb = new Database("people.db");
 
 peopleDb.exec(
   "CREATE TABLE IF NOT EXISTS people (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT not null, age INTEGER not null)",
