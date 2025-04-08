@@ -1,16 +1,8 @@
 {
     "tasks": {
-        "start": {
-            "command": "deno run --unsafely-ignore-certificate-errors -A src/main.ts",
-            "desc": "Start the server"
-        },
-
         "lume": "echo \"import 'lume/cli.ts'\" | deno run --unsafely-ignore-certificate-errors -A -"
     },
     "imports": {
-        "@sqlite": "jsr:@db/sqlite",
-        "@oak": "jsr:@oak/oak",
-
         "lume/": "https://deno.land/x/lume@v2.0.0/"
     },
     "compilerOptions": {

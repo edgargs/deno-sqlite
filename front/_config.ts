@@ -5,7 +5,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 
 const site = lume({
     src: "./public",
-    dest: "./dist"
+    dest: "../dist"
 });
 
 site.use(inline(/* Options */))

@@ -2,16 +2,20 @@
 #Develop
 
 ##Front
+cd front
 deno task lume
 
 ##Back
+cd back
 deno task start
 
 #Production
 
 ##Front
+cd front
 deno task lume
 
 ##Back
-deno compile --no-check --allow-read --allow-ffi --allow-net --allow-env --output ./dist/api ./src/main.ts
+cd back
+deno compile --no-check --allow-read --allow-ffi --allow-net --allow-env --output ../dist/api ./src/main.ts
 
