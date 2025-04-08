@@ -1,11 +1,5 @@
 
 #Develop
-Replace into main.ts
-```
-const ROOT_DIR = "./index.html", ROOT_DIR_PATH = "/";
-==>
-const ROOT_DIR = "./dist/index.html", ROOT_DIR_PATH = "/";
-```
 
 ##Front
 deno task lume
@@ -14,16 +8,10 @@ deno task lume
 deno task start
 
 #Production
-Replace into main.ts
-```
-const ROOT_DIR = "./dist/index.html", ROOT_DIR_PATH = "/";
-==>
-const ROOT_DIR = "./index.html", ROOT_DIR_PATH = "/";
-```
 
 ##Front
 deno task lume
 
 ##Back
-deno compile --no-check --output ./dist/index ./src/main.ts
+deno compile --no-check --allow-read --allow-ffi --allow-net --allow-env --output ./dist/api ./src/main.ts
 

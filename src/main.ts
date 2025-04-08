@@ -1,6 +1,8 @@
 import { Application, send } from "@oak";
 import { router } from "./routes.ts";
 
+import "jsr:@std/dotenv/load";
+
 const app = new Application();
 
 //add cors
@@ -15,7 +17,7 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 // Serve static files
-const ROOT_DIR = "./dist/index.html", ROOT_DIR_PATH = "/";
+const ROOT_DIR = Deno.env.get("ROOT_DIR"), ROOT_DIR_PATH = "/";
 app.use(async (ctx, next) => {
   if (!ctx.request.url.pathname.startsWith(ROOT_DIR_PATH)) {
     next();
